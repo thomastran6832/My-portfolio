@@ -1,11 +1,9 @@
 [build]
   command = "npm run build"
-  commandOrigin: config
-  environment:
-    - NEXT_PUBLIC_APP_URL
-  publish: /opt/build/repo/.next
-  publishOrigin: config
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_APP_URL = "https://thomastran.netlify.app"
+
 [[plugins]]
-  - inputs: {}
-    origin: config
-    package: '@netlify/plugin-nextjs
+  package = "@netlify/plugin-nextjs"
