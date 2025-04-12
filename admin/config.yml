@@ -11,7 +11,7 @@ collections:
     files:
       - label: "Home Section"
         name: "home"
-        file: "index-admin.html"
+        file: "index.html"
         fields:
           - {label: "Hero Title", name: "hero_title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
